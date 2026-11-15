@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Route Soundtrack</string>
+
+    <string name="route_summary">%1$s km left · arrive in %2$d min</string>
+    <string name="no_route">No destination</string>
+    <string name="no_route_detail">Set a destination in navigation and start guidance</string>
+    <string name="no_route_cues">Set a destination to see the track points</string>
+    <string name="destination_unknown">Destination</string>
+
+    <string name="first_cue">First track in</string>
+    <string name="next_cue">Next track in</string>
+    <string name="unit_km">km</string>
+    <string name="cue_start">Start track</string>
+    <string name="cue_mid">Midway track</string>
+    <string name="cue_arrival">Arrival track · 8 min ETA</string>
+    <string name="cue_count">%1$d play points</string>
+    <string name="strip_arrival">Arrival</string>
+
+    <string name="phase_deferred">Highway · track on hold</string>
+    <string name="phase_deferred_detail">Plays after you leave the highway</string>
+    <string name="phase_arrival">Arrival track playing</string>
+    <string name="phase_arrival_wait">Arriving soon</string>
+    <string name="phase_ended">You have arrived</string>
+    <string name="phase_off">Music is off</string>
+    <string name="phase_no_more">No more tracks</string>
+
+    <string name="road_city">City</string>
+    <string name="road_jam">Traffic jam</string>
+    <string name="road_highway">Highway</string>
+    <string name="road_unknown">Detecting</string>
+    <string name="night">Night</string>
+
+    <string name="now_playing">Now playing</string>
+    <string name="now_arrival">Arrival track</string>
+    <string name="silent">Silent</string>
+    <string name="silent_detail">Music plays only at set points</string>
+    <string name="silent_deferred">Track held on the highway</string>
+    <string name="ducked" formatted="false">Navigation first · music 30%</string>
+
+    <string name="mood_chill">Quiet lo-fi</string>
+    <string name="mood_groove">Lo-fi groove</string>
+    <string name="mood_upbeat">Alert · synthwave</string>
+    <string name="mood_hype">Power · EDM</string>
+    <string name="mood_arrival">Arrival · wind-down</string>
+
+    <string name="feel_title">Where is your mood\nheading right now?</string>
+    <string name="feel_hint">Tap a circle to play that color right away</string>
+    <string name="feel_quiet">Calm</string>
+    <string name="feel_groove">Easy</string>
+    <string name="feel_upbeat">Excited</string>
+    <string name="feel_hype">Hyped</string>
+    <string name="feel_arrival">Arrival</string>
+    <string name="feel_tap">%1$s, tap to play</string>
+    <string name="today_route">Today · %1$s</string>
+    <string name="route_line">%1$s km · about %2$s · %3$d play points</string>
+    <string name="no_route_line">Set a destination to get play points</string>
+    <string name="eta_min">%1$d min</string>
+    <string name="eta_hour_min">%1$d h %2$d min</string>
+    <string name="open_settings">Route · Settings</string>
+    <string name="back_main">Home</string>
+
+    <string name="driving_chip">Driving</string>
+    <string name="label_road">Road now</string>
+    <string name="label_now">Now</string>
+    <string name="label_eta">To arrival</string>
+    <string name="ducked_short">Guidance first</string>
+    <string name="ducked_level" formatted="false">Music 30%</string>
+    <string name="silent_next">Plays at next point</string>
+    <string name="silent_hold">Held on highway</string>
+    <string name="cue_end">End</string>
+
+    <string name="open_tracks">Tracks</string>
+    <string name="cue_cap_start">Start · %1$s km</string>
+    <string name="cue_cap_mid">At %1$s km</string>
+    <string name="cue_cap_arrival">8 min before arrival</string>
+    <string name="drive_wait_title">Starts once you set a destination</string>
+    <string name="drive_wait_detail">Start route guidance in navigation</string>
+    <string name="ready_first">First track ready</string>
+    <string name="deferred_title">Resting on the highway</string>
+    <string name="arrival_head">Arrival track</string>
+    <string name="arrival_detail">Music fades out as you arrive</string>
+    <string name="tracks_title">Tracks on this route</string>
+    <string name="tracks_sub">%1$s · %2$s km · %3$d tracks</string>
+    <string name="tracks_auto">Auto style · picked by road and time</string>
+    <string name="tracks_fixed">Style · %1$s</string>
+    <string name="tracks_auto_word">By the road</string>
+    <string name="tracks_auto_sub">Calm in town, upbeat on highways</string>
+    <string name="tracks_footer">Tracks play 1–2 min only at set points, quiet in between</string>
+    <string name="summary_kicker">Today\'s soundtrack</string>
+    <string name="summary_count">%1$d tracks</string>
+    <string name="summary_count_tail"> played</string>
+    <string name="summary_none">No tracks played this time</string>
+    <string name="summary_from">Start</string>
+    <string name="summary_at">at %1$s km</string>
+    <string name="summary_again">Pick the next feeling</string>
+    <string name="summary_route">%1$s · %2$s km</string>
+
+    <string name="feel_hint_playing">Tap another circle to switch</string>
+    <string name="feel_hint_playing_wide">Tap another circle to switch to that color</string>
+    <string name="now_playing_feel">Playing · %1$s</string>
+    <string name="session_on_feel">Soundtrack on · %1$s</string>
+    <string name="stop_short">Stop</string>
+    <string name="open_drive">Drive view</string>
+    <string name="open_drive_long">To drive view</string>
+    <string name="route_preview">Route preview</string>
+    <string name="route_preview_sub">Play points and settings</string>
+    <string name="today_label">Today</string>
+    <string name="state_parked">Parked</string>
+    <string name="hero_guiding">Navigating · %1$s km left</string>
+    <string name="route_cues_title">%1$d play points · %2$s · %3$s</string>
+    <string name="detail_start">Start %1$s km</string>
+    <string name="detail_mid">Mid %1$s km</string>
+    <string name="detail_arrival">Arrival 8 min before</string>
+    <string name="stat_total">Total</string>
+    <string name="stat_cues">Play points</string>
+    <string name="cue_count_short">%1$d</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_sub">Play points redraw as you change these</string>
+    <string name="skip_rest">Skips all remaining tracks</string>
+    <string name="now_km">Now %1$s km</string>
+    <string name="eta_about">about %1$s</string>
+    <string name="note_mid_hold">Held on highways</string>
+
+    <string name="label_preset">Trip type</string>
+    <string name="preset_long_haul">Long haul</string>
+    <string name="preset_trip">Trip</string>
+    <string name="preset_family">Family</string>
+
+    <string name="label_density">Music density</string>
+    <string name="density_frequent">Often</string>
+    <string name="density_occasional">Sometimes</string>
+    <string name="density_off">Off</string>
+
+    <string name="label_mood">Track style</string>
+    <string name="mood_mode_auto">Auto</string>
+    <string name="mood_mode_chill">Calm</string>
+    <string name="mood_mode_groove">Easy</string>
+    <string name="mood_mode_upbeat">Excited</string>
+    <string name="mood_mode_hype">Hyped</string>
+
+    <string name="session_start">Turn on soundtrack</string>
+    <string name="session_stop">Turn off soundtrack</string>
+    <string name="session_restart">Turn on again</string>
+    <string name="lock_driving">Locked while driving</string>
+    <string name="lock_running">Turn off the soundtrack to change</string>
+
+    <string name="label_auto_start">Start with route guidance</string>
+    <string name="auto_start_detail">Turns on when navigation guidance starts</string>
+    <string name="armed_waiting">Waiting for route guidance</string>
+
+    <string name="notif_channel">Drive soundtrack</string>
+    <string name="notif_next">Next track in %1$s km</string>
+</resources>

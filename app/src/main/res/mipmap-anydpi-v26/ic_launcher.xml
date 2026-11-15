@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  앱 아이콘 (디자인 시안 A "헤드셋 블롭"). 적응형 아이콘이라 런처가 모양(원·둥근 사각형 등)을 씌운다.
+  - background: 라벤더·하늘·피치 메시 + 소리 물결 층
+  - foreground: 블롭 몸 + 헤드셋 + 눈 (투명 바탕)
+  두 층 모두 108dp 이미지이고, 가운데 72dp가 화면에 보이는 영역이다.
+  그림자·번짐이 많아 VectorDrawable 대신 밀도별 PNG(mipmap-*dpi)로 넣었다.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+</adaptive-icon>

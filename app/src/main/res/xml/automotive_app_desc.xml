@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 차량(AAOS)에 "이 앱은 미디어 앱"이라고 알린다. 미디어 센터·위젯이 이 선언을 보고 앱을 찾는다. -->
+<automotiveApp>
+    <uses name="media" />
+</automotiveApp>

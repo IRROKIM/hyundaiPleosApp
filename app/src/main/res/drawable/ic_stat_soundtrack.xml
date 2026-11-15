@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  알림 작은 아이콘: 앱 아이콘(헤드셋 블롭)의 흰색 실루엣.
+  알림 아이콘은 시스템이 알파(투명도)만 보고 한 가지 색으로 칠하므로 흰색 단색 + 투명 배경으로 그린다.
+  눈은 evenOdd로 몸에서 구멍을 뚫어 표현한다.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 몸 + 눈 구멍 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M6,19 L6,13 A6,6 0 0,1 18,13 L18,19 Z M9.1,13.5 a0.9,1.2 0 1,0 1.8,0 a0.9,1.2 0 1,0 -1.8,0 Z M13.1,13.5 a0.9,1.2 0 1,0 1.8,0 a0.9,1.2 0 1,0 -1.8,0 Z" />
+    <!-- 헤드셋 머리띠 -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M4.6,13 A7.4,7.4 0 0,1 19.4,13" />
+    <!-- 귀마개 왼쪽·오른쪽 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M3,12.5 a1.2,1.2 0 0,1 1.2,-1.2 h0.9 a1.2,1.2 0 0,1 1.2,1.2 v3.6 a1.2,1.2 0 0,1 -1.2,1.2 h-0.9 a1.2,1.2 0 0,1 -1.2,-1.2 z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M17.7,12.5 a1.2,1.2 0 0,1 1.2,-1.2 h0.9 a1.2,1.2 0 0,1 1.2,1.2 v3.6 a1.2,1.2 0 0,1 -1.2,1.2 h-0.9 a1.2,1.2 0 0,1 -1.2,-1.2 z" />
+</vector>

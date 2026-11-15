@@ -1,0 +1,17 @@
+{
+  "name": "city-highway-jam",
+  "destination": { "name": "테스트 목적지 · 시내 → 고속도로 → 정체", "totalKm": 50.0 },
+  "keyframes": [
+    { "km": 0.0,  "kmh": 0 },
+    { "km": 0.3,  "kmh": 40 },
+    { "km": 7.0,  "kmh": 45 },
+    { "km": 8.0,  "kmh": 100 },
+    { "km": 36.0, "kmh": 100 },
+    { "km": 36.3, "kmh": 10 },
+    { "km": 40.0, "kmh": 12, "brakePerMin": 6 },
+    { "km": 40.5, "kmh": 35 },
+    { "km": 49.8, "kmh": 30 },
+    { "km": 50.0, "kmh": 0 }
+  ],
+  "clock": { "silentRate": 20, "playingRate": 1 }
+}
