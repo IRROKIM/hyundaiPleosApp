@@ -6,6 +6,15 @@
 
 > 1차 심사용 컨셉 버전(v0.1.0-concept)입니다. **Pleos Connect SDK**(NaviHelper 3.0.5 · Vehicle 2.3.2)로 내비 경로와 차량 상태를 읽어 동작합니다.
 
+## APK
+
+- 위치: [`apk/김도희_RouteSoundtrack_release.apk`](apk/김도희_RouteSoundtrack_release.apk) (v0.1.0-concept)
+- 릴리스 키로 서명되어 있어 바로 설치할 수 있습니다.
+
+```bash
+adb install -r apk/김도희_RouteSoundtrack_release.apk
+```
+
 ## 화면·소리에서 보이는 것
 
 | # | 컨셉 | 화면·소리에서 확인하는 방법 |
@@ -66,6 +75,19 @@ storePassword=...
 keyAlias=route-soundtrack
 keyPassword=...
 ```
+
+## 테스트 환경
+
+| 항목 | 내용 |
+|---|---|
+| 에뮬레이터 | Pleos Connect Emulator **2.1.0** (AVD `Pleos_Connect_v2.1.0`) + Virtual Console |
+| 화면 규격 | S-17 디스플레이 2560×1440 |
+| 앱 창 (가로 1개) | 1700×1184 dp (에뮬레이터 실측 1682×1210) |
+| 앱 창 (세로 2분할) | 840×1184 dp. 내비와 앱을 나란히 띄워 사용 (기본 사용 방식) |
+| 권한 | `NAVI_ROUTE`, `CAR_DRIVE`, `CAR_LIGHTS` (매니페스트에 선언) |
+| 서버·계정 | 필요 없음 |
+
+세로 2분할: 앱 영역 오른쪽 가장자리의 "⋮" 손잡이를 가운데로 끌면 앱 창이 두 개로 나뉩니다.
 
 ## 실행 방법 (Pleos Connect Emulator)
 
