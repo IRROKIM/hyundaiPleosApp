@@ -69,6 +69,7 @@ data class UiState(
     val played: List<PlayedWindow> = emptyList(),
     val roadTrail: List<RoadSpan> = emptyList(),
     val uxRestricted: Boolean? = null,   // 차량의 주행 규제 상태. null = 알 수 없음
+    val replanned: Boolean = false,      // 이번에 켤 때 지난번과 다른 설정으로 재생 지점을 다시 정했다
 ) {
     /**
      * 주행 중 조작 잠금. 차량이 주행 규제 상태(uxRestricted)를 알려 주면 그 값을 따르고,
@@ -106,6 +107,7 @@ class DriveSession(
     private var engine: TriggerEngine? = null
     private var classifier: ContextClassifier? = null
     private var runCount = 0
+    private var lastRunSettings: Settings? = null   // 지난번에 켤 때 쓴 설정(재생 지점이 바뀌었는지 알리기 위해)
     private var openTrackId: Int? = null
     private var arrivalStartKm: Double? = null
     private var hadRoute = false          // 이번 주행에서 경로를 본 적이 있는가
@@ -222,6 +224,8 @@ class DriveSession(
 
     private fun startRun(playNow: Boolean = false) {
         val settings = _ui.value.settings
+        val replanned = lastRunSettings?.let { settings.movesCuesFrom(it) } ?: false
+        lastRunSettings = settings
         val policy = Policy(settings)
         playback.masterGain = policy.volume
         playback.fadeOutMs = policy.fadeOutMs
@@ -240,7 +244,7 @@ class DriveSession(
         lastRoad = null
         tickCount = 0
         Log.d(TAG, "session start: $settings playNow=$playNow")
-        _ui.value = previewState(settings).copy(running = true, phase = Phase.WAITING)
+        _ui.value = previewState(settings).copy(running = true, phase = Phase.WAITING, replanned = replanned)
         job = scope.launch(dispatcher) { runLoop() }
     }
 

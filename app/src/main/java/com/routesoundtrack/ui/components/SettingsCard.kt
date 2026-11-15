@@ -80,7 +80,13 @@ fun SettingsCard(
             Text(stringResource(R.string.settings_title), style = PleosType.TitleS)
             Text(stringResource(R.string.settings_sub), style = PleosType.LabelS, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
-        if (!enabled) LockBanner(if (ui.locked) R.string.lock_driving else R.string.lock_running)
+        if (!enabled) LockBanner(
+            when {
+                ui.locked -> R.string.lock_driving
+                ui.replanned -> R.string.lock_replanned   // 끈 사이에 바꾼 설정으로 재생 지점을 다시 정했음을 알린다
+                else -> R.string.lock_running
+            }
+        )
         ChipGroup(R.string.label_preset, Preset.entries, ui.settings.preset, enabled, onPreset, label = { stringResource(presetLabel(it)) })
         ChipGroup(R.string.label_density, Density.entries, ui.settings.density, enabled, onDensity, label = { stringResource(densityLabel(it)) })
         ChipGroup(

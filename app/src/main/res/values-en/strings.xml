@@ -143,7 +143,8 @@
     <string name="session_stop">Turn off soundtrack</string>
     <string name="session_restart">Turn on again</string>
     <string name="lock_driving">Locked while driving</string>
-    <string name="lock_running">Turn off the soundtrack to change</string>
+    <string name="lock_running">Settings are locked while playing</string>
+    <string name="lock_replanned">Play points updated to the new settings</string>
 
     <string name="label_auto_start">Start with route guidance</string>
     <string name="auto_start_detail">Turns on when navigation guidance starts</string>

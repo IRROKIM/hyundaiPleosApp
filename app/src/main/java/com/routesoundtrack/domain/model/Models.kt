@@ -22,7 +22,10 @@ data class Settings(
     val density: Density = Density.FREQUENT,
     val moodMode: MoodMode = MoodMode.AUTO,
     val autoStart: Boolean = false,   // 내비 안내가 시작되면 자동으로 켜기. 사용자가 직접 켜야 한다(자동 재생 금지 규정)
-)
+) {
+    /** old와 비교해 재생 지점 위치가 바뀌는가. 지점을 바꾸는 설정은 주행 목적·음악 밀도뿐이다(곡 성격·자동 시작은 그대로). */
+    fun movesCuesFrom(old: Settings): Boolean = preset != old.preset || density != old.density
+}
 
 /** 1틱(SDK 1초, 디버그 시뮬레이터 0.25초)마다 모은 차량·내비 값. 모르는 값은 null이다. */
 data class DriveSnapshot(

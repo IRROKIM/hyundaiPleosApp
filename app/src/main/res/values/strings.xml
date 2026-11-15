@@ -147,7 +147,8 @@
     <string name="session_stop">사운드트랙 끄기</string>
     <string name="session_restart">다시 켜기</string>
     <string name="lock_driving">주행 중에는 바꿀 수 없어요</string>
-    <string name="lock_running">사운드트랙을 끄면 바꿀 수 있어요</string>
+    <string name="lock_running">재생 중에는 설정이 잠겨요</string>
+    <string name="lock_replanned">재생 지점이 새 설정으로 바뀌었어요</string>
 
     <string name="label_auto_start">안내 시작 시 자동 시작</string>
     <string name="auto_start_detail">내비 경로 안내가 시작되면 켜져요</string>
